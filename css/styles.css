@@ -4,6 +4,55 @@ body, html {
   font-family: 'Arvo', serif;
   color: #000;
 }
+/*=============================================
+=            Nav bar                          =
+=============================================*/
+
+.navbar {
+  -webkit-transition: all .35s;
+  -moz-transition: all .35s;
+  transition: all .35s;
+  background-color:transparent;
+  border: none;
+  padding: 25px 0px 25px 0px;
+  /* Add additional styles here for the UNCOLLAPSED state */
+}
+.navbar.affix {
+  padding: 10px;
+  background-color: #a9498a;
+  /* Add additional styles here for the COLLAPSED state */
+}
+.navbar-inverse.affix .navbar-brand, .navbar-inverse.affix .navbar-nav>li>a{
+    font-size: 24px;
+    color: #FFF;
+}
+
+.navbar-inverse.affix .navbar-brand, .navbar-inverse.affix .navbar-nav>li>a:hover{
+    font-size: 24px;
+    color: #000;
+}
+
+.navbar-inverse.affix .navbar-brand, .navbar-inverse.affix .navbar-nav>li>a:active{
+    font-size: 24px;
+    color: #000;
+}
+
+.navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav>li>a{
+    font-size: 24px;
+    color: #FFF;
+}
+
+.navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav>li>a:hover{
+    font-size: 24px;
+    color: #FFF;
+}
+
+.navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav>li>a:active{
+    font-size: 24px;
+    color: #FFF;
+}
+
+/*=====  End of Section comment block  ======*/
 
 .img-portfolio {
   margin: 0px;
@@ -103,54 +152,10 @@ section.carousel .fill {
   visibility:visible;
 }
 
-
-.navbar {
-  -webkit-transition: all .35s;
-  -moz-transition: all .35s;
-  transition: all .35s;
-  background-color:transparent;
-  border: none;
-  padding: 25px 0px 25px 0px;
-  /* Add additional styles here for the UNCOLLAPSED state */
-}
-.navbar.affix {
-  padding: 10px;
-  background-color: #0c9b48;
-  /* Add additional styles here for the COLLAPSED state */
-}
-.navbar-inverse.affix .navbar-brand, .navbar-inverse.affix .navbar-nav>li>a{
-    font-size: 24px;
-    color: #FFF;
-}
-
-.navbar-inverse.affix .navbar-brand, .navbar-inverse.affix .navbar-nav>li>a:hover{
-    font-size: 24px;
-    color: #000;
-}
-
-.navbar-inverse.affix .navbar-brand, .navbar-inverse.affix .navbar-nav>li>a:active{
-    font-size: 24px;
-    color: #000;
-}
-
-.navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav>li>a{
-    font-size: 24px;
-    color: #FFF;
-}
-
-.navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav>li>a:hover{
-    font-size: 24px;
-    color: #FFF;
-}
-
-.navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav>li>a:active{
-    font-size: 24px;
-    color: #FFF;
-}
-
 .main
 {
     margin-top: 25px;
+    margin-bottom: 50px;
 }
 
 .panel-default {
@@ -236,13 +241,12 @@ section.carousel .fill {
 
 .bgimg-2 {
   background-image: url("../images/img_parallax2.jpg");
-  min-height: 500px;
+  min-height: 50%;
 }
 
 .bgimg-3 {
   background-image: url("../images/img_parallax3.jpg");
-  min-height: 400px;
-  margin-top: 50px;
+  min-height: 200px;
 }
 
 .bgimg-4 {
@@ -317,14 +321,14 @@ footer {
 
 .footer-center
 {
-  color: #45df44;
+  color: #a9498a;
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
 .footer-right 
 {
-  color: #45df44;
+  color: #a9498a;
   margin: 0px;
   padding: 0px;
 }
@@ -351,7 +355,7 @@ footer {
 }
 
 .footer-right ul li a{
-    background-color:  #33383b;
+    background-color:  #a9498a;
     border-radius: 2px;
     font-size: 20px;
     color: #ffffff;
@@ -363,24 +367,24 @@ footer {
 
 .footer-left
 {
-  color: #0c9b48;
+  color: #FFF;
 }
 
 .footer-left h3
 {
-  color: #0c9b48;
+  color: #FFF;
   font: normal 36px 'Cookie', cursive;
 }
 
 footer p.footer-links a{
     font-size:18px;
     font-weight: bold;
-    color:  #0c9b48;
+    color:  #FFF;
     padding: 0;
 }
 
 .footer-center i{
-    background-color:  #33383b;
+    background-color:  #a9498a;
     color: #ffffff;
     font-size: 25px;
     width: 38px;
@@ -398,13 +402,13 @@ footer p.footer-links a{
 }
 
 .footer-center p{
-    color: #0c9b48;
+    color: #FFF;
     vertical-align: middle;
     margin:0;
 }
 
 .footer-center a
 {
-  color: #0c9b48;
+  color: #FFF;
   text-decoration: none;
 }
