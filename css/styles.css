@@ -1,0 +1,410 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Arvo', serif;
+  color: #000;
+}
+
+.img-portfolio {
+  margin: 0px;
+  bottom: 0px;
+}
+
+.img-hover {
+    display: inline-block;
+    background: black;
+    padding: 0px;
+    margin: 0px;
+}
+
+.img-hover img {
+    display: block;
+    -webkit-transition: all 0.9s linear;
+       -moz-transition: all 0.9s linear;
+        -ms-transition: all 0.9s linear;
+         -o-transition: all 0.9s linear;
+            transition: all 0.9s linear;
+}
+
+.img-hover:hover img {
+    opacity: 0.2;
+    padding: 0px;
+    margin: 0px;
+}
+
+.client-img-container
+{
+  position: relative;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Home Page Carousel */
+
+section.carousel {
+    top: -5px;
+    height: 50%;
+}
+
+section.carousel .item,
+section.carousel .item.active,
+section.carousel .carousel-inner {
+    height: 100%;
+}
+
+section.carousel .fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Responsive Styles */
+
+@media(max-width:991px) {
+    .customer-img,
+    .img-related {
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width:767px) {
+    .carousel .carousel {
+        height: 70%;
+    }
+}
+
+.center-text
+{
+    text-align: center;
+}
+
+.enterprise-description
+{
+  position: absolute;
+  color: #FFF;
+  text-align:center;
+  vertical-align: middle;
+  font-size: 36px;
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  visibility: hidden;
+  padding: 0px;
+  margin: 0px;
+}
+
+.enterprise-description p{
+  padding: 25px;
+}
+
+.client-img-container:hover .enterprise-description {
+  visibility:visible;
+}
+
+
+.navbar {
+  -webkit-transition: all .35s;
+  -moz-transition: all .35s;
+  transition: all .35s;
+  background-color:transparent;
+  border: none;
+  padding: 25px 0px 25px 0px;
+  /* Add additional styles here for the UNCOLLAPSED state */
+}
+.navbar.affix {
+  padding: 10px;
+  background-color: #0c9b48;
+  /* Add additional styles here for the COLLAPSED state */
+}
+.navbar-inverse.affix .navbar-brand, .navbar-inverse.affix .navbar-nav>li>a{
+    font-size: 24px;
+    color: #FFF;
+}
+
+.navbar-inverse.affix .navbar-brand, .navbar-inverse.affix .navbar-nav>li>a:hover{
+    font-size: 24px;
+    color: #000;
+}
+
+.navbar-inverse.affix .navbar-brand, .navbar-inverse.affix .navbar-nav>li>a:active{
+    font-size: 24px;
+    color: #000;
+}
+
+.navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav>li>a{
+    font-size: 24px;
+    color: #FFF;
+}
+
+.navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav>li>a:hover{
+    font-size: 24px;
+    color: #FFF;
+}
+
+.navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav>li>a:active{
+    font-size: 24px;
+    color: #FFF;
+}
+
+.main
+{
+    margin-top: 25px;
+}
+
+.panel-default {
+    border-color: #0c9b48;
+}
+
+.panel-default>.panel-heading {
+    color: #fff;
+    background-color: #0c9b48;
+    border-color: #0c9b48;
+}
+
+.btn-default {
+    color: #FFF;
+    background-color: #0c9b48;
+    border-color: #0c9b48;
+}
+
+.btn-default:hover {
+    color: #FFF;
+    background-color: #085126;
+    border-color: #085126;
+}
+
+.btn-default:focus, .btn-default:active {
+    color: #FFF;
+    background-color: #085126;
+    border-color: #085126;
+}
+
+.btn-default.active.focus, .btn-default.active:focus, .btn-default.active:hover, .btn-default:active.focus, .btn-default:active:focus, .btn-default:active:hover
+{
+    color: #FFF;
+    background-color: #085126;
+    border-color: #085126;
+}
+
+.paralaxCaption
+{
+    background-color:transparent;
+    font-size:25px;
+    color: #000;
+}
+
+.slogan
+{
+    text-transform: uppercase;
+    color: #0c9b48;
+}
+
+.slogan span
+{
+    text-transform: lowercase;
+    color: #00471d;
+    font-size: 24px;
+}
+
+.buttoninpanel
+{
+  margin-top: 100px;
+  border-top: 1px solid #b5cebe; 
+  padding-top: 20px;
+}
+
+/**
+ *
+ * Parallax background
+ *
+ */
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+  position: relative;
+  opacity: 0.9;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url("../images/img_parallax.jpg");
+  min-height: 100%;
+}
+
+.bgimg-2 {
+  background-image: url("../images/img_parallax2.jpg");
+  min-height: 500px;
+}
+
+.bgimg-3 {
+  background-image: url("../images/img_parallax3.jpg");
+  min-height: 400px;
+  margin-top: 50px;
+}
+
+.bgimg-4 {
+  background-image: url("../images/img_parallax1.jpg");
+  min-height: 250px;
+  margin-top: 0px;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 45%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #000;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+  font-size:25px;
+  opacity: 1;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #000;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+
+/**
+ *
+ * Custom grids
+ *
+ */
+
+.custom-col-lg-2
+{
+    width: 16.66666667%;
+}
+
+.call-to-action
+{
+  margin: 10px;
+}
+/* Footer Styles */
+
+footer {
+    background-color: #000;
+    color: #000;
+    margin: 0px;
+    padding: 0px;
+}
+
+.footer-container
+{
+  margin-top: -5px;
+  padding-top: 20px;
+  font: normal 16px sans-serif;
+}
+
+.footer-center
+{
+  color: #45df44;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.footer-right 
+{
+  color: #45df44;
+  margin: 0px;
+  padding: 0px;
+}
+
+.footer-right ul 
+{
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.footer-right ul li i
+{
+  margin: 0px;
+  width: 20px;
+  height: 20px;
+}
+
+.footer-right ul li
+{
+  margin: 0px;
+  text-align: center;
+  display: inline-block;
+}
+
+.footer-right ul li a{
+    background-color:  #33383b;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 90px;
+    margin-left: 0px;
+    padding: 10px;
+}
+
+.footer-left
+{
+  color: #0c9b48;
+}
+
+.footer-left h3
+{
+  color: #0c9b48;
+  font: normal 36px 'Cookie', cursive;
+}
+
+footer p.footer-links a{
+    font-size:18px;
+    font-weight: bold;
+    color:  #0c9b48;
+    padding: 0;
+}
+
+.footer-center i{
+    background-color:  #33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+
+.footer-center i.fa-envelope{
+    font-size: 17px;
+    line-height: 38px;
+}
+
+.footer-center p{
+    color: #0c9b48;
+    vertical-align: middle;
+    margin:0;
+}
+
+.footer-center a
+{
+  color: #0c9b48;
+  text-decoration: none;
+}
