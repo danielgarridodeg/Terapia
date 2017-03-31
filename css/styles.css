@@ -1,6 +1,7 @@
 body, html {
   height: 100%;
-  margin: 0;
+  margin: 0px;
+  padding: 50px 0px 0px 0px;
   font-family: 'Arvo', serif;
   color: #000;
 }
@@ -12,11 +13,13 @@ body, html {
   -webkit-transition: all .35s;
   -moz-transition: all .35s;
   transition: all .35s;
-  background-color:transparent;
+  background-color: #a9498a;
   border: none;
   padding: 25px 0px 25px 0px;
+  margin: 0px;
   /* Add additional styles here for the UNCOLLAPSED state */
 }
+
 .navbar.affix {
   padding: 10px;
   background-color: #a9498a;
@@ -225,7 +228,7 @@ section.carousel .fill {
  * Parallax background
  *
  */
-.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
   position: relative;
   opacity: 0.9;
   background-attachment: fixed;
@@ -246,31 +249,46 @@ section.carousel .fill {
 
 .bgimg-3 {
   background-image: url("../images/img_parallax3.jpg");
-  min-height: 200px;
+  min-height: 500px;
 }
 
 .bgimg-4 {
-  background-image: url("../images/img_parallax1.jpg");
+  background-image: url("../images/ludoteca.jpg");
   min-height: 250px;
   margin-top: 0px;
 }
 
+.bgimg-5 {
+  background-image: url("../images/unlam.jpg");
+  min-height: 350px;
+  margin-top: 0px;
+}
+
+
 .caption {
   position: absolute;
   left: 0;
-  top: 45%;
+  top: 35%;
   width: 100%;
   text-align: center;
   color: #000;
+}
+
+.caption p {
+  margin: auto;
+  width: 50%;
+  background-color: #000;
+  letter-spacing: 5px;
+  font-size: 20px;
+  color: #FFF;
 }
 
 .caption span.border {
   background-color: #000;
   color: #fff;
   padding: 18px;
-  font-size: 25px;
+  font-size: 20px;
   letter-spacing: 10px;
-  font-size:25px;
   opacity: 1;
 }
 

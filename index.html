@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -9,8 +8,8 @@
 		<link rel="stylesheet" type="text/css" href="css/normalize/normalize.css">
 		<link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="css/fontawesome/font-awesome.min.css">
+		<link href="css/carousel.css" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="css/styles.css">
-		<link rel="stylesheet" type="text/css" href="css/psy.css">
 		<script type="text/javascript" src="js/modernizr-custom.js"></script>
 		<link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
 	</head>
@@ -33,12 +32,31 @@
 		            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		                <ul class="nav navbar-nav navbar-right">
 		                    <li>
-		                        <a href="#">Psicoedu</a>
+		                        <a href="index.html">Psicoedu</a>
 		                    </li>
-		                    <li>
-		                        <a href="#">Mision y valores</a>
-		                    </li>
-		                    <li>
+		                    <li class="dropdown">
+						        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						        Actividades<b class="caret"></b>
+						        </a>
+						        <ul class="dropdown-menu">
+						          <li><a href="secciones/actividades/ludoteca.html">Ludoteca</a></li>
+						          <li><a href="secciones/actividades/preparate-unlam.html">Preparacion UNLAM</a></li>
+						          <li><a href="secciones/actividades/el-club-de-la-tarea.html">Club de la tarea</a></li>
+						        </ul>
+					      	</li>
+	                    	<li class="dropdown">
+						        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						        Servicios<b class="caret"></b>
+						        </a>
+						        <ul class="dropdown-menu">
+						          <li><a href="#">Psicologicos</a></li>
+						          <li class="divider"></li>
+						          <li><a href="#">Talleres</a></li>
+						          <li class="divider"></li>
+						          <li><a href="#">Educativos</a></li>
+						        </ul>
+					      	</li>
+					      	<li>
 		                        <a href="#">Contact</a>
 		                    </li>
 		                </ul>
@@ -48,11 +66,51 @@
 		        <!-- /.container -->
 		    </nav>
 	    </header>
-	    <div class="bgimg-2">
-		  	<div class="caption">
-		    	<span class="border paralaxCaption">PSICOEDU</span>
-		  	</div>
-		</div>
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+			<!-- Indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+			</ol>
+			<div class="carousel-inner" role="listbox">
+				<div class="item active">
+					<img class="first-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide">
+					<div class="container">
+						<div class="carousel-caption">
+							<h1>Mision</h1>
+							<p>Crear un ambiente estimulante continuo que brinde los medios necesarios para el desarrollo integral y potencial de la persona en las diferentes etapas de la vida.</p>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<img class="second-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Second slide">
+					<div class="container">
+						<div class="carousel-caption">
+							<h1>Vision</h1>
+							<p>Contribuir a la formación integral de niños y adolescentes capaces de auto dirigirse satisfactoriamente ante diferentes circunstancias que se les presenten a lo largo de la vida</p>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<img class="third-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">
+					<div class="container">
+						<div class="carousel-caption">
+							<h1>Valores</h1>
+							<p>Respeto, Congruencia, Servicio Integral, Responsabilidad, Trabajo en Equipo.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div><!-- /.carousel -->
 	    <!-- Page Content -->
 	    <section class="container main center-text">
 	    	<section class="row">
@@ -72,41 +130,6 @@
 					</p>
 	            </div>
 	            <div class="col-md-4 col-sm-4">
-	            </div>
-	        </section>
-	        <!-- Marketing Icons Section -->
-	        <section class="row">
-	            <div class="col-lg-12">
-	                <h1 class="page-header center-text slogan">
-	                    Misión, Visión y Valores
-	                </h1>
-	            </div>
-	            <div class="col-md-4 col-sm-4">
-	            	<span class="fa-stack fa-4x"><em class="fa fa-circle fa-stack-2x"></em><em class="fa fa-plus-square fa-stack-1x fa-inverse"></em></span>
-	                <h4>MISIÓN</h4>
-	                <p>
-	                	Crear un ambiente estimulante continuo que brinde los medios necesarios para el desarrollo integral y potencial de la persona en las diferentes etapas de la vida.
-	                </p>
-	            </div>
-	            <div class="col-md-4 col-sm-4">
-	            	<span class="fa-stack fa-4x"><em class="fa fa-circle fa-stack-2x"></em> <em class="fa fa-plus-square fa-stack-1x fa-inverse"></em> </span>
-	                <h4 class="service-heading">VISIÓN</h4>
-	                <p>
-	                	Contribuir a la formación integral de niños y adolescentes capaces de auto dirigirse satisfactoriamente ante diferentes circunstancias que se les presenten a lo largo de la vida.
-	                </p>
-	            </div>
-	            <div class="col-md-4 col-sm-4">
-	            	<span class="fa-stack fa-4x"><em class="fa fa-circle fa-stack-2x"></em> <em class="fa fa-plus-square fa-stack-1x fa-inverse"></em> </span>
-	                <h4 class="service-heading">VISIÓN</h4>
-	                	<p>
-		                	<ul>
-		                		<li>Respeto</li>
-		                		<li>Congruencia</li>
-		                		<li>Servicio Integral</li>
-		                		<li>Responsabilidad</li>
-		                		<li>Trabajo en Equipo</li>
-		                	</ul>
-	                	</p>
 	            </div>
 	        </section>
 	        <!-- /.row -->
@@ -156,56 +179,6 @@
 	        </section>
 	        <!-- /.row -->
 	    </section>
-	    <div class="bgimg-3">
-		  	<div class="caption">
-		    	<span class="border paralaxCaption">EL CLUB DE LA TAREA</span>
-		  	</div>
-		</div>
-		<section class="container main">
-	    	<section class="row">
-	            <div class="col-lg-12">
-	                <h3 class="page-header center-text">
-	                    No tienes tiempo para revisar la tarea de tu hijo? No tienes con quién dejar a tu hijo por las tardes de manera segura? Tu hijo requiere regularizarse en alguna materia o temática especifica? El club de la tarea se pone a tus órdenes con su club.
-	                </h3>
-	                <p>
-	                	El club de tareas, es un espacio de apoyo pedagógico, diseñado para que los niños realicen su tarea y repasen sus materias de una forma agradable y divertida, con la supervisión de profesores especializados en educación básica.
-	                </p>
-					<p>
-						El CLUB DE TAREAS es un espacio que brinda apoyo a los niñ@s y jóvenes de nivel primaria y secundaria, particularmente en la realización de sus tareas y proyectos o investigaciones escolares, mediante la implementación de herramientas creativas y personalizadas, garantizado el cumplimiento preciso y requerido al nivel educativo que le corresponda.
-					</p>
-					<p>
-						Además les garantizamos a los padres de familia que la constancia y dedicación se verá reflejada en la constitución de un hábito educativo para sus hij@s a largo plazo.
-					</p>
-					<p>
-						Las sesiones varían en tiempo dependiendo de lo requerido por cada estudiante (de 1 a 2 horas diarias) y conlleva el apoyo de un guía experto para la realización de las tareas escolares.
-					</p>
-	            </div>
-	            <div class="col-lg-12">
-	                <h2 class="page-header center-text">
-	                    ¿QUÉ ES CLUB DE LA TAREA? 
-	                </h2>
-	                <p>
-	                	El club de tareas, es un espacio de apoyo pedagógico, diseñado para que los niños realicen su tarea y repasen sus materias de una forma agradable y divertida, con la supervisión de profesores especializados en educación básica.
-	                </p>
-					<p>
-						El CLUB DE TAREAS es un espacio que brinda apoyo a los niñ@s y jóvenes de nivel primaria y secundaria, particularmente en la realización de sus tareas y proyectos o investigaciones escolares, mediante la implementación de herramientas creativas y personalizadas, garantizado el cumplimiento preciso y requerido al nivel educativo que le corresponda.
-					</p>
-					<p>
-						Además les garantizamos a los padres de familia que la constancia y dedicación se verá reflejada en la constitución de un hábito educativo para sus hij@s a largo plazo.
-					</p>
-					<p>
-						Las sesiones varían en tiempo dependiendo de lo requerido por cada estudiante (de 1 a 2 horas diarias) y conlleva el apoyo de un guía experto para la realización de las tareas escolares.
-					</p>
-					<p>
-						… es descubrir mis recursos personales.<br>
-						… es desarrollar mis potencialidades. <br>
-						… es identificar y apreciar lo que SOY. <br>
-						… es reconocer y aprender de la diferencia de los demás. <br>
-						… es saber que el compromiso y la perseverancia son elementos claves para alcanzar el ÉXITO. <br>
-					</p>
-	            </div>
-	        </section>
-		</section>
         <!-- Footer -->
 		<footer>
 			<div class="container footer-container">
