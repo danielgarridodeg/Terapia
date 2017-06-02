@@ -3,8 +3,22 @@ body, html {
   margin: 0px;
   padding: 0px 0px 0px 0px;
   font-family: 'Roboto', sans-serif !important;
-  font-size: 16pt;
+  font-size: 13pt;
   color: #000;
+}
+h1, h2
+{
+  color: #aa3886;
+}
+
+h3
+{
+  color: #aa3886 !important;
+}
+
+h4
+{
+  color: #aa3886;
 }
 /*=============================================
 =            Nav bar                          =
@@ -20,7 +34,7 @@ header
   -webkit-transition: all .35s;
   -moz-transition: all .35s;
   transition: all .35s;
-  background-color: #a9498a;
+  background-color: #000;
   border: none;
   padding: 10px 0px 10px 0px;
   margin: 0px;
@@ -29,7 +43,7 @@ header
 
 .navbar.affix {
   padding: 0px;
-  background-color: #a9498a;
+  background-color: #000;
   /* Add additional styles here for the COLLAPSED state */
 }
 .navbar-inverse.affix .navbar-brand, .navbar-inverse.affix .navbar-nav>li>a{
@@ -39,12 +53,12 @@ header
 
 .navbar-inverse.affix .navbar-brand, .navbar-inverse.affix .navbar-nav>li>a:hover{
     font-size: 24px;
-    color: #000;
+    color: #a9498a;
 }
 
 .navbar-inverse.affix .navbar-brand, .navbar-inverse.affix .navbar-nav>li>a:active{
     font-size: 24px;
-    color: #000;
+    color: #a9498a;
 }
 
 .navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav>li>a{
@@ -54,12 +68,12 @@ header
 
 .navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav>li>a:hover{
     font-size: 24px;
-    color: #FFF;
+    color: #a9498a;
 }
 
 .navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav>li>a:active{
     font-size: 24px;
-    color: #FFF;
+    color: #a9498a;
 }
 
 /*=====  End of Section comment block  ======*/
@@ -370,6 +384,12 @@ footer {
   position: absolute;
 }
 
+.social-top
+{
+  padding: 14px 0px 0px 0px !important;
+  margin: 0px 0px 0px 10px !important;
+}
+
 .social-network
 {
   margin-top: 20px;
@@ -383,10 +403,10 @@ footer {
 }
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,300);
-footer { background-color:#0c1a1e; min-height:250px; font-family: 'Open Sans', sans-serif; }
+footer { background-color:#0c1a1e; min-height:250px; font-family: 'Open Sans', sans-serif !important; }
 .footerleft { margin-top: 0px; padding: 0px; }
 .logofooter { margin-bottom:10px; margin-left: 20px; font-size:25px; color:#fff; font-weight:700;}
-.footerleft p { color:#fff; font-size:16px !important; font-family: 'Open Sans', sans-serif; margin: 20px;}
+.footerleft p { color:#fff; font-size:16px !important; font-family: 'Open Sans', sans-serif !important; margin: 20px;}
 .footerleft p i { width:20px; color:#999;}
 .paddingtop-bottom {  margin-top: 25px;}
 .footer-ul { list-style-type:none;  padding-left:0px; margin-left:2px;}
