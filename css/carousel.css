@@ -48,16 +48,75 @@ body {
 }
 
 /* Declare heights because of positioning of img element */
+
 .carousel .item {
   height: 500px;
-  background-color: #777;
+  background-color: #fff;
 }
+
+.carousel .item#trabajo {
+  height: 500px;
+  background-color: #e88fcc;
+}
+
+.carousel .item#trabajo h1{
+  color: #fff;
+}
+
 .carousel-inner > .item > img {
-  position: absolute;
+  /*position: absolute;*/
   top: 0;
   left: 0;
-  min-width: 100%;
+  /*min-width: 100%;*/
   height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.carousel-inner > .item > .adolescentes {
+  min-width:100%;
+  min-height:100%;
+  background-size: cover;
+  background-image: url('../images/adolescentes.jpg');
+  background-repeat: no-repeat;
+  background-origin: border-box;
+}
+
+.carousel-inner > .item > .Creatividad {
+  min-width:100%;
+  min-height:100%;
+  background-size: cover;
+  background-image: url('../images/creatividad.jpg');
+  background-repeat: no-repeat;
+  background-origin: border-box;
+}
+
+.carousel-inner > .item > .compromiso {
+  top: -50%;
+  min-width:100%;
+  min-height:100%;
+  background-size: cover;
+  background-image: url('../images/compromiso.png');
+  background-repeat: no-repeat;
+  background-origin: border-box;
+}
+
+.carousel-inner > .item > .respeto {
+  min-width:100%;
+  min-height:100%;
+  background-size: cover;
+  background-image: url('../images/respeto.png');
+  background-repeat: no-repeat;
+  background-origin: border-box;
+}
+
+.carousel-inner > .item > .valores {
+  min-height: 500px;
+  background-size: cover;
+  background-image: url('../images/valores_slider.png');
+  background-repeat: no-repeat;
+  background-origin: border-box;
 }
 
 
